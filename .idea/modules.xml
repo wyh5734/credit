@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/credit.iml" filepath="$PROJECT_DIR$/.idea/credit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/credit-bean/credit-bean.iml" filepath="$PROJECT_DIR$/credit-bean/credit-bean.iml" />
+      <module fileurl="file://$PROJECT_DIR$/credit-common-util/credit-common-util.iml" filepath="$PROJECT_DIR$/credit-common-util/credit-common-util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/credit-interface/credit-interface.iml" filepath="$PROJECT_DIR$/credit-interface/credit-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/credit-manage-service/credit-manage-service.iml" filepath="$PROJECT_DIR$/credit-manage-service/credit-manage-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/credit-manage-web/credit-manage-web.iml" filepath="$PROJECT_DIR$/credit-manage-web/credit-manage-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/credit-parent/credit-parent.iml" filepath="$PROJECT_DIR$/credit-parent/credit-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/credit-service-util/credit-service-util.iml" filepath="$PROJECT_DIR$/credit-service-util/credit-service-util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/credit-web-util/credit-web-util.iml" filepath="$PROJECT_DIR$/credit-web-util/credit-web-util.iml" />
+    </modules>
+  </component>
+</project>

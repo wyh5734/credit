@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="credit-bean" />
+        <module name="credit-common-util" />
+        <module name="credit-interface" />
+        <module name="credit-manage-service" />
+        <module name="credit-manage-web" />
+        <module name="credit-service-util" />
+        <module name="credit-web-util" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="credit-bean" target="1.8" />
+      <module name="credit-common-util" target="1.8" />
+      <module name="credit-interface" target="1.8" />
+      <module name="credit-manage-service" target="1.8" />
+      <module name="credit-manage-web" target="1.8" />
+      <module name="credit-parent" target="1.8" />
+      <module name="credit-service-util" target="1.8" />
+      <module name="credit-web-util" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

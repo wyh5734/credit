@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper SYSTEM "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.tyut.credit.manage.mapper.ContractMapper">
+
+    <resultMap id="contractMap" type="com.tyut.credit.bean.NplmLoanContract" autoMapping="true">
+        <id property="id" column="id"></id>
+
+        <collection property="nplmBorrowerInfoList" ofType="com.tyut.credit.bean.NplmBorrowerInfo" autoMapping="true">
+            <id property="id" column="id"></id>
+        </collection>
+        <collection property="nplmContractAttributeList" ofType="com.tyut.credit.bean.NplmContractAttribute" autoMapping="true">
+            <id property="id" column="id"></id>
+        </collection>
+    </resultMap>
+    <select  id ="getAllContract" resultMap="contractMap">
+        SELECT * FROM nplm_loan_contract nlc
+        INNER JOIN nplm_contract_attribute nca
+        ON nca.loan_contract_id=nlc.id
+        INNER JOIN nplm_borrower_info nbi
+        ON nlc.`borrower_id`=nbi.`id`
+    </select>
+    <select  id ="selectContractByRequirement" resultMap="contractMap">
+        SELECT * FROM nplm_loan_contract nlc
+        INNER JOIN nplm_contract_attribute nca
+        ON nca.loan_contract_id=nlc.id
+        INNER JOIN nplm_borrower_info nbi
+        ON nlc.`borrower_id`=nbi.`id`
+        <where>
+            <if test="loanContractNum!=null">
+                nca.loan_contract_id=#{loanContractNum}
+            </if>
+            <if test="repayAccountName!=null &amp;&amp;repayAccountName!=&quot;&quot;">
+                and nlc.REPAY_ACCOUNT_NAME=#{repayAccountName}
+            </if>
+            <if test="repayAcctIdenNum!=null and repayAcctIdenNum.trim()!=''">
+                and nlc.REPAY_ACCT_IDEN_NUM=#{repayAcctIdenNum}
+            </if>
+        </where>
+    </select>
+</mapper>
